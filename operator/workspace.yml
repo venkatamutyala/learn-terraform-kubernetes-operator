@@ -21,13 +21,6 @@ spec:
       value: "true"
       sensitive: false
       environmentVariable: false
-    - key: AWS_DEFAULT_REGION
-      valueFrom:
-        configMapKeyRef:
-          name: aws-configuration
-          key: region
-      sensitive: false
-      environmentVariable: true
     - key: AWS_ACCESS_KEY_ID
       sensitive: true
       environmentVariable: true
